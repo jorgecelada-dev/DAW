@@ -8,12 +8,17 @@ Una carpeta por asignatura y, dentro, una carpeta numerada por tema o práctica.
 Cada práctica es un proyecto de IntelliJ independiente: se abre con *File → Open* sobre su carpeta.
 
 ```
+bases-de-datos/
+entornos-de-desarrollo/
+itinerario-empleabilidad/
+lenguajes-de-marcas/
+modulo-optativo/
+└── proyecto-mpo1/
 programacion/
 ├── 01-primer-proyecto/       Primer programa: print, println, printf
 ├── 02-operadores/            Lectura por teclado (Scanner) y operadores
 └── 03-estructuras-basicas/   Variables, tipos, nombres y constantes (ejercicios 1-5)
-modulo-optativo/
-└── proyecto-mpo1/
+sistemas-informaticos/
 ```
 
 ## Normas de nombres

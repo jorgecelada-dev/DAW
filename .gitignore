@@ -1,0 +1,14 @@
+# Copia de seguridad del repositorio antiguo (no se sube)
+_copia-git-antiguo/
+
+# Compilados de IntelliJ
+out/
+
+# Archivos personales de IntelliJ (configuración local de cada ordenador)
+.idea/workspace.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+
+# Sistema
+.DS_Store
+Thumbs.db

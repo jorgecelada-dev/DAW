@@ -38,8 +38,8 @@ public class ApuntesClaseOperadores {
         //&& -> AND (++=+,--=-, +-=-)|| ->OR (con que una de los dos sea verdad sera verdad)
         operador1 =10;
         operador2=20;
-        boolean comparacionAND = operador2 > 0 && operador1 >10 //false
-        boolean comparacionOR = operador1 >10 || operador2<20 && operador1+2 >=operaodr2; //true
+        //boolean comparacionAND = operador2 > 0 && operador1 >10 //false
+        //boolean comparacionOR = operador1 >10 || operador2<20 && operador1+2 >=operaodr2; //true
 
 
 

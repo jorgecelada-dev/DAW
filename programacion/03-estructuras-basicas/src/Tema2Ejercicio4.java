@@ -24,17 +24,6 @@ public class Tema2Ejercicio4 {
         System.out.println("Coste de las bebidas: " + costeTotalBebidas);
         System.out.println("Coste de los bocadillos: " + costeTotalBocadillos);
         System.out.println("Coste total del pedido: " + costeTotalPedido);
-
-
-
-
-
-
-
-
-
-
-
-
+        teclado.close();
     }
 }

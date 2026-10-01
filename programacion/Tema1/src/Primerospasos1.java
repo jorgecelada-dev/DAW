@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Entrada {
+public class Primerospasos1 {
     public static void main(String[] args){
         System.out.println("Programa para explicar los operadores");
         Scanner lector = new Scanner(System.in);                          //variable scanner sirve para leer datos del terminal por teclado

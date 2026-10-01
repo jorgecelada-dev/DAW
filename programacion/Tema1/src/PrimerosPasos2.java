@@ -1,6 +1,4 @@
-
-public class Entrada {
-
+public class PrimerosPasos2 {
     /*definición de un metodo,
     //metodo modificador de acceso, es un programa no una pagina web
     //modo acceso retorno nombre metodo(argumentos) */
@@ -36,4 +34,6 @@ public class Entrada {
         System.out.printf("me llamo %s con apellidos %s %s y tengo %d años, mido %f\n", nombre2, apellido1, apellido2, edad, alturaFloat);
         System.out.println(DNI);
     }
+}
+
 }

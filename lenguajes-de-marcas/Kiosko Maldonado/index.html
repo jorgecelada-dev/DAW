@@ -1,0 +1,247 @@
+<!DOCTYPE html>      <!-- indica que usa HTML5-->
+<html lang="es">     <!-- idioma-->
+<head>
+
+    <meta charset="UTF-8">       <!-- caracteres que entiende la consola UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- para que sea responsive en movil-->
+    <title>Re-Tickets</title>
+    <!--estilo para centrar el texto de la tabla ya es CSS-->
+    <style>       
+          table {
+          text-align: center;
+    }
+        </style>
+
+</head> 
+
+<body>
+
+    <img src="logo.png" width="300" alt="Logo de Re-Tickets" loading="eager">
+
+    <h1>Re-Tickets</h1>  <!-- h1, etiqueta para el título principal -->
+    <h2> ¿Te gusta improvisar? Este es tu sitio </h2>   <!-- h2, etiqueta subtitulo-->
+    <p> Compra entradas liberadas por cancelaciones de última hora</p> <!-- p, etiqueta parrafo-->
+
+
+    <h2>¿Por que Re-Tickets?</h2>
+    <ul>                           <!-- ul, etiqueta para lista no ordenada-->
+     <li>Entradas disponibles 1 día antes del evento</li>    <!-- li, etiqueta para cada elemento  -->
+     <li>Renovaciones diarias de tickets oficiales cancelados en último momento</li>
+     <li>Confianza y seguridad</li>
+     <li>Vende tu entrada en el último momento</li>
+    </ul>
+
+
+ <br>    <!-- br separadores temporales (se hacen mas adelante con CSS)-->
+ <br> 
+
+
+ <table>                                      <!-- etiqueta para tabla-->
+        <caption>Ultimos añadidos</caption>   <!-- caption, etiqueta para el título de la tabla-->
+     <thead>                                  <!-- thead, encabezado de la tabla-->
+            <tr>                              <!-- tr, fila de la tabla-->
+                <th>Partido Sevilla-Real Madrid</th>   <!--falta poner el enlace para comrprar la entras--> 
+                <th>Concierto Laura Pausini</th>
+                <th>Concierto Enrique Iglesias</th>  <!-- th, encabezado de la columna-->
+             </tr>
+        </thead>
+
+
+   </table>
+
+ <br>
+ <br>
+
+
+ <table> 
+        <caption>Todos los Re-Tickets disponibles</caption>
+        
+     <thead>
+
+        <tr>
+            <th scope="col">Evento</th>    
+            <th scope="col">Fecha</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Disponibles</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Comprar</th>
+        </tr>
+    </thead>
+
+
+     <tbody>
+        <tr>
+            <td>Partido Sevilla-Real Madrid</td>
+            <td>4 abril 2026</td>
+            <td>Deportes</td>
+            <td>10 entradas disponibles</td>
+            <td>5.5$</td>
+            <td><a href="#">Comprar</a></td>
+        </tr>
+
+        <tr>
+            <td>Partido Alicante-Athletic</td>
+            <td>5 abril 2026</td>
+            <td>Deportes</td>
+            <td>5 entradas disponibles</td>
+            <td>50.5$</td>
+            <td><a href="#">Comprar</a></td>
+        </tr>
+
+        <tr>
+            <td>Concierto Laura Pausini</td>
+            <td>4 abril 2026</td>
+            <td>Musica</td>
+            <td>4 entradas disponibles</td>
+            <td>18$</td>
+            <td><a href="#">Comprar</a></td>
+        </tr>
+
+        <tr>
+            <td>Concierto Enrique Iglesias</td>
+            <td>4 abril 2026</td>
+            <td>Musica</td>
+            <td>10 entradas disponibles</td>
+            <td>15.5$</td>
+            <td><a href="#">Comprar</a></td>
+        </tr>
+    
+    </tbody>
+    <tfoot>
+            <tr>
+                <td colspan="6">Re-Tickets 2026-27</td>
+            </tr>   
+        </tfoot>
+ </table>
+
+ <h2>Únete y mantente informado de los últimos eventos</h2>
+
+ <form>
+    <fieldset>
+        <legend>Formulario de contacto</legend>
+
+        <label for="nombre">Nombre:
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </label>
+        <br>
+
+        <label for="email">Email:
+            <input type="email" id="email" name="email" required placeholder="Tu email">
+        </label>
+        <br>
+
+         <label for="telefono">Telefono:
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono">
+        </label>
+        <br>
+
+         <label for="fecha_nacimiento">Fecha de nacimiento:
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </label>
+        <br>
+
+         <label for="contraseña">Contraseña:
+            <input type="password" id="contraseña" name="contraseña" minlength="8" required placeholder="Tu contraseña">
+        </label>
+        <br>
+        <button type="submit">Enviar</button> 
+
+
+
+
+    </fieldset>
+    
+<h2>Sobre tu pedido</h2>
+    <fieldset>
+        
+
+    <legend>Datos del pedido</legend>
+
+     <select>for="evento">Evento:
+            <input type="text" id="evento" name="evento" required placeholder="Nombre del evento">
+        </select> 
+        <br>
+
+        
+
+        <label for="numero_entradas">Número de entradas:
+            <input type="number" id="numero_entradas" name="numero_entradas" min="1" max="10" required>
+        </label>
+        <br>
+
+        <label for="hora_evento">Hora del evento:
+            <input type="time" id="hora_evento" name="hora_evento">
+        </label>
+        <br>
+
+        <label for="fecha_compra">Fecha de compra:
+            <input type="date" id="fecha_compra" name="fecha_compra">
+        </label>
+        <br>
+
+        <label for="nivel_de_urgencia">Nivel de urgencia:
+            <input type="range" id="nivel_de_urgencia" name="nivel_de_urgencia" min="0" max="100">
+            <output for=""nivel_de_urgencia" id="urgencia_output">50</output>
+        </label>
+        
+        <br>
+
+
+
+
+    </fieldset>
+
+
+<h2>Que experiencia buscas?</h2>
+    <fieldset>
+    <legend>Filtra por tipo de evento</legend>
+
+     <input type="radio" id="all" name="Eventos" required placeholder="Todos los eventos" checked>
+     <label for="all">all</label>
+        <br>
+
+    <input type="radio" id="Musical" name="Eventos" required placeholder="Eventos musicales">
+     <label for="Musical">Musical</label>
+        <br>
+
+    <input type="radio" id="Deporte" name="Eventos" required placeholder="Eventos deportivos">
+     <label for="Deporte">Deporte</label>
+        <br>
+
+    <input type="radio" id="Discoteca" name="Eventos" required placeholder="Eventos de discoteca">
+     <label for="Discoteca">Discoteca</label>
+        <br> 
+
+    <input type="radio" id="Cultura" name="Eventos" required placeholder="Eventos culturales">
+     <label for="Cultura">Cultura</label>
+        <br> 
+
+    <input type="radio" id="Reservas_restaurantes" name="Eventos" required placeholder="Reservas en restaurantes" >
+     <label for="Reservas_restaurantes">Reservas en restaurantes</label>
+        <br> 
+    </fieldset>
+
+<h2>Extras del pedido</h2>
+    <fieldset>
+    <legend>Extras</legend>
+
+     <input type="checkbox" id="Descuento" name="Descuento">
+     <label for="Descuento">Descuento  de 30% en tu proxima compra</label>
+        <br>
+
+    <input type="checkbox" id="Prioridad" name="Eventos" >
+     <label for="Prioridad">Prioridad de alertas durante 1 mes gratis</label>
+        <br>
+
+    <input type="checkbox" id="Discoteca" name="Eventos">
+     <label for="Discoteca">Descuento  de 50% en tu proximo partido </label>
+        <br> 
+
+    <input type="checkbox" id="Reservas_restaurantes" name="Eventos" >
+     <label for="Reservas_restaurantes">20% de descuento en reservas en restaurantes durante 1 mes</label>
+        <br> 
+    </fieldset>
+ </form>
+
+</body>
+</html>

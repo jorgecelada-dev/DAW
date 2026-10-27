@@ -55,9 +55,60 @@
          <input type="text" placeholder="Escribe tu nombre">    
         </label>
         <br>    
-        
+        <fieldset>
+         <legend>Fecha, hora, número</legend>
+        </fieldset>
         <button type="submit">Enviar</button>       
       </form>
+      <br>
+      <br>
+      <label>Variedades</label>
+      <select>
+         <option> Elige un tipo</option>
+         <optgroup label="Variedades de pepino Españoles">
+         <option value="pepino verde">Pepino verde</option>
+         <option value="pepino rojo">Pepino rojo</option>
+         <option value="pepino blanco">Pepino blanco</option>
+         </optgroup>
+         <optgroup label="Variedades de pepino Portugueses">
+         <option value="pepino amarillo">Pepino amarillo</option>
+         <option value="pepino negro">Pepino negro</option>
+         <option value="Pepino translucido">Pepino translucido</option>
+         </optgroup>
+<br>
+
+      <label>Elige por lotes</label>
+      
+      <select name= "lotes[]" multiple size="3">
+          <optgroup> label="LOTES PREMIUM">
+            <option value="">Lote A </option>
+            <option value="">Lote B</option>
+          </optgroup>
+          <optgroup> label="LOTES NORMALES">
+            <option value="">Lote C </option>
+            <option value="">Lote D</option>
+          </optgroup>
+      
+         </select>
+         <br>
+         <br>
+         <label>Adjuntar facturas</label>
+         <input type="file" multiple accept="image/*,.pdf">
+
+         <lanel>  observaciones</lanel>
+         <textarea name="observaciones" placeholder="Escribe tus observaciones"></textarea>
+         <br>
+         <textarea rows="8" cols="40">
+
+         </textarea>
+
+
+
+
+
+      
+   
+
 
       
                                                         
